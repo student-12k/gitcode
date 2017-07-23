@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="js/menu.js" type="text/javascript"></script>
+<script src="js/order.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<title>商品信息</title>
+<style type="text/css">
+body{
+background-color:#333;
+-webkit-font-smoothing: antialiased;
+      font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+div.box1 {
+	
+	height: auto;
+	width: 1081px;
+	float: left;
+	border-color: rgb(179, 179, 223);
+	margin: 80px 100px;
+	border-radius: 20px;
+	background-color:#888686;
+}
+input{
+border-radius: 8px;
+}
+
+#left {
+	float: left;
+	width: 200px;
+	margin:10px 5px;
+	height:35em;
+}
+
+#right {
+	float: right;
+	width: 860px	;
+}
+</style>
+
+</head>
+<body>
+	<div class="box1">
+<div id="left">
+			<ul id="menu">
+				<li><a href="index.html">首页</a>
+					</li>
+				<li><a href="#">商品信息管理</a>
+					<ul>
+						<li><a href="items.html">商品信息查询与删除</a>
+						</li>
+						<li><a href="additem.html">商品信息添加</a>
+						</li>
+						<li><a href="upitem.html">商品信息更新</a>
+						</li>
+						<li><a href="cate.html">商品类别查询</a>
+						</li>
+						<li><a href="addcate.html">商品类别添加</a>
+						</li>
+						<li><a href="http://java.sun.com/">接口一</a>
+						</li>
+						<li><a href="http://en.wikipedia.org/wiki/C_Sharp">接口二</a>
+						</li>
+					</ul></li>
+				<li></li>
+				<li><a href="#">订单信息管理</a>
+					<ul>
+						<li><a href="order.html">订单信息查询</a>
+						</li>
+						<li><a href="http://www.xbox.com/en-US/">订单条目查询</a>
+						</li>
+					</ul></li>
+				<li><a href="#">管理员</a>
+					<ul>
+						<li><a href="person.html">个人信息查看</a>
+						</li>
+						<li><a href="http://www.google.com/">个人信息更新</a>
+						</li>
+						<li><a href="login.html">退出登录</a>
+						</li>
+					</ul></li>
+			</ul>
+		</div>
+		<div id="right">
+			<table   style="table-layout: fixed;width:860px">
+				<tr height="22px">
+					<td colspan="12" align="left">检索条件</td>
+					<td colspan="12" align="center" rowspan="3"><input
+						style="width:18em;height:8em" type="button" value="檢索"
+						onclick="doSearch();">
+					</td>
+				</tr>
+				<tr height="22px">
+					<td colspan="12" align="left"><table>
+							<tr>
+								<td style="width:120px" align="center">订单号</td>
+								<td><input type="text" id="checkCode">
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr height="22px">
+					<td colspan="12" align="left"><table>
+							<tr>
+								<td style="width:120px" align="center">用户名</td>
+								<td><input type="text" id="checkName">
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr height="22px">
+					<td colspan="24" align="left"><table>
+							<tr>
+								<td style="width:120px" align="center">信息提示</td>
+								<td><label style="color: red;" id="msgText"></label>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<br />
+
+			<table  
+				style="table-layout: fixed;width:860px;border-style:solid none none nonex;border-width: 2px;" id="myTable">
+				<tr align="center" style="background:gray;" >
+					<td colspan=1><input type="checkbox" id="checkBoxAll"
+						onclick="doSetAllCheckbox();">
+					</td>
+					<td colspan=3 id="id">订单ID</td>
+					<td colspan=3 id="name">用户ID</td>
+					<td colspan=3 id="city">收货人</td>
+					<td colspan=3 id="price">收货人电话</td>
+					<td colspan=3 id="number">总价</td>
+					<td colspan=3 id="picture">支付方式</td>
+					<td colspan=6 id="id">创建时间</td>
+					<td colspan=3 id="cate">订单状态</td>
+				</tr>
+			</table>
+			<br />
+			<table>
+				<tbody>
+					<tr align="center">
+						<td>
+							<button type="button"
+								style="width: 100px; height: 40px;margin: 5px 350px"
+								onclick="doDelete();">更新订单状态</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

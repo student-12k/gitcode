@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.slides.min.js"></script>
+
+<script src="js/menu.js" type="text/javascript"></script>
+<script src="js/items.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/example.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<title>商品信息</title>
+<style type="text/css">
+body{
+background-color:#333;
+    -webkit-font-smoothing: antialiased;
+}
+div.box1 {
+	
+	height: auto;
+	width: 1081px;
+	float: left;
+	border-color: rgb(179, 179, 223);
+	margin: 80px 100px;
+	border-radius: 20px;
+	background-color:#888686;
+}
+input{
+border-radius: 8px;
+}
+
+#left {
+	float: left;
+	width: 200px;
+	margin:10px 5px;
+	height:35em;
+}
+
+#right {
+	float: right;
+	width:860px;
+	
+}
+ #slides {
+      display: none
+    }
+
+    #slides .slidesjs-navigation {
+      margin-top:3px;
+    }
+
+    #slides .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+    }
+
+    #slides .slidesjs-next {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .slidesjs-pagination {
+      margin: 6px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+</style>
+
+</head>
+<body>
+	<div class="box1">
+		<div id="left">
+			<ul id="menu">
+				<li><a href="index.html">首页</a>
+					</li>
+				<li><a href="#">商品信息管理</a>
+					<ul>
+						<li><a href="items.html">商品信息查询与删除</a>
+						</li>
+						<li><a href="additem.html">商品信息添加</a>
+						</li>
+						<li><a href="upitem.html">商品信息更新</a>
+						</li>
+						<li><a href="cate.html">商品类别查询</a>
+						</li>
+						<li><a href="addcate.html">商品类别添加</a>
+						</li>
+						<li><a href="http://java.sun.com/">接口一</a>
+						</li>
+						<li><a href="http://en.wikipedia.org/wiki/C_Sharp">接口二</a>
+						</li>
+					</ul></li>
+				<li></li>
+				<li><a href="#">订单信息管理</a>
+					<ul>
+						<li><a href="order.html">订单信息查询</a>
+						</li>
+						<li><a href="http://www.xbox.com/en-US/">订单条目查询</a>
+						</li>
+					</ul></li>
+				<li><a href="#">管理员</a>
+					<ul>
+						<li><a href="person.html">个人信息查看</a>
+						</li>
+						<li><a href="http://www.google.com/">个人信息更新</a>
+						</li>
+						<li><a href="login.html">退出登录</a>
+						</li>
+					</ul></li>
+			</ul>
+		</div>
+		<div id="right" >
+	 <div class="container">
+    <div id="slides" style="width:860px">
+      <img src="img/example-slide-1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+      <img src="img/example-slide-2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+      <img src="img/example-slide-3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
+      <img src="img/example-slide-4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">      
+      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+    <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+    </div>
+  </div>
+		</div>
+	</div>
+	<script>
+$(function() {
+  $('#slides').slidesjs({
+    width: 940,
+    height: 508,
+    navigation: false
+  });
+});
+</script>
+</body>
+</html>

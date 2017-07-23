@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>dorigestservlet</servlet-name>
+    <servlet-class>userservlet.dorigestservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>finditemservlet</servlet-name>
+    <servlet-class>item.servlet.finditemservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>passwordfoget</servlet-name>
+    <servlet-class>userservlet.passwordfoget</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Modifyservlet</servlet-name>
+    <servlet-class>userservlet.Modifyservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Cartservlet</servlet-name>
+    <servlet-class>itemservlet.Cartservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>orderservlet</servlet-name>
+    <servlet-class>itemservlet.orderservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>payway</servlet-name>
+    <servlet-class>itemservlet.payway</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>itemservlet</servlet-name>
+    <servlet-class>houtaiservlet.itemservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>orderitems</servlet-name>
+    <servlet-class>houtaiservlet.orderitems</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>dorigestservlet</servlet-name>
+    <url-pattern>/userservlet/dorigestservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>finditemservlet</servlet-name>
+    <url-pattern>/servlet/finditemservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>passwordfoget</servlet-name>
+    <url-pattern>/userservlet/passwordfoget</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Modifyservlet</servlet-name>
+    <url-pattern>/servlet/Modifyservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Cartservlet</servlet-name>
+    <url-pattern>/itemservlet/Cartservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>orderservlet</servlet-name>
+    <url-pattern>/itemservlet/orderservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>payway</servlet-name>
+    <url-pattern>/itemservlet/payway</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>itemservlet</servlet-name>
+    <url-pattern>/houtaiservlet/itemservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>orderitems</servlet-name>
+    <url-pattern>/houtaiservlet/orderitems</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>html/index.html</welcome-file>
+  </welcome-file-list>
+</web-app>
